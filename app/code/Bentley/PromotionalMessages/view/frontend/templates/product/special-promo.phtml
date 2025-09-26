@@ -1,0 +1,11 @@
+<?php
+/** @var $block \Bentley\PromotionalMessages\Block\Product\SpecialPromo */
+$specialPromo = $block->getSpecialPromo();
+if (!$specialPromo) {
+    return;
+}
+?>
+<div class="product-promo-text">
+    <strong class="label">Promotional Messages:</strong>
+    <div class="value"><?= $block->escapeHtml($specialPromo) ?></div>
+</div>

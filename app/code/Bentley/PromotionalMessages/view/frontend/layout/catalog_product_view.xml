@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="http://schemas.magento.com/magento/page_layout/1.0/page_layout.xsd">
+    <body>
+       <referenceBlock name="product.info.addtocart">
+              <block class="Bentley\PromotionalMessages\Block\Product\SpecialPromo"
+                     name="product.special.promo"
+                     template="Bentley_PromotionalMessages::product/special-promo.phtml"
+                     as="bently1"
+                     />
+                    <action method="setTemplate">
+                        <argument name="template" xsi:type="string">Bentley_PromotionalMessages::product/view/addtocart.phtml</argument>
+                    </action>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart.additional">
+              <block class="Bentley\PromotionalMessages\Block\Product\SpecialPromo"
+                     name="product.special.promo.config"
+                     as="bently1"
+                     template="Bentley_PromotionalMessages::product/special-promo.phtml"
+                     before="-"
+                     />
+               <action method="setTemplate">
+                  <argument name="template" xsi:type="string">Bentley_PromotionalMessages::product/view/addtocart.phtml</argument>
+                </action>
+        </referenceBlock>       
+    </body>
+</page>

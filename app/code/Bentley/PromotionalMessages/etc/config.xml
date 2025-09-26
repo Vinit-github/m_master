@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Default configuration for Promotional Messages module
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+
+    <default>
+        <promo_message>
+            <general>               
+                <enabled>1</enabled>               
+                <special_promo>special_promo</special_promo>                
+                <default_message>This is a Default Message shown if product attribute is empty</default_message>
+            </general>
+        </promo_message>
+    </default>
+</config>
